@@ -1,7 +1,7 @@
 # Catatan Harian Sysadmin
 
 <a href="storcli.md">
-  Tutorila StorCLI
+  Tutorial StorCLI
 </a>
 
 
