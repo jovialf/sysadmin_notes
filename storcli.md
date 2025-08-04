@@ -14,6 +14,7 @@ Ctl Model              Ports PDs DGs DNOpt VDs VNOpt BBU sPR DS  EHS ASOs Hlth
 
 ### Lihat Physical Disk yang ada pada raid controller 
 /opt/MegaRAID/storcli/storcli64 /cX /eall /sall show
+
 Contoh melihat physical disk yang terpasang pada raid controller 1
 ```
 # /opt/MegaRAID/storcli/storcli64 /c1 /eall /sall show
@@ -28,6 +29,7 @@ EID:Slt DID State DG       Size Intf Med SED PI SeSz Model                     S
 
 ### Lihat Virtual Disk yang ada pada raid controller
 /opt/MegaRAID/storcli/storcli64 /cX/vall show
+
 Contoh melihat virtual disk yang dikonfigurasi pada raid controller 1
 ```
 # /opt/MegaRAID/storcli/storcli64 /c1/vall show
