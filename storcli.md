@@ -57,7 +57,9 @@ Total Foreign PDs = 0
 ```
 
 ### Import foreign configuration apabila ada foreign configuration yang terbaca
+```
 /opt/MegaRAID/storcli/storcli64 /cX/fall import
+```
 
 ### Set disk menjadi Unconfiguration Good
 /opt/MegaRAID/storcli/storcli64 /cX /eXXX /sX set good force.
@@ -65,4 +67,9 @@ Dimana eXXX adalah enclosure id dan sX adalah slot id. Yang dapat dilihat menggu
 Contoh penggunaanya adalah 
 ```
 /opt/MegaRAID/storcli/storcli64 /c1 /e252 /s0 set good force
+```
+
+### Melihat proses rebuild raid pada disk.
+```
+/opt/MegaRAID/storcli/storcli64 /cX /eXXX /sX show rebuild
 ```
