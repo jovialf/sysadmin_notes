@@ -1,6 +1,6 @@
 # Tutorial StorCli command pada Linux
 
-<a href="https://jovial.my.id">
+<a href="storcli.md">
   Test Link
 </a>
 
