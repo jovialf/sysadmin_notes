@@ -14,9 +14,30 @@ Ctl Model              Ports PDs DGs DNOpt VDs VNOpt BBU sPR DS  EHS ASOs Hlth
 
 ### Lihat Physical Disk yang ada pada raid controller 
 /opt/MegaRAID/storcli/storcli64 /cX /eall /sall show
+Contoh melihat physical disk yang terpasang pada raid controller 1
+```
+# /opt/MegaRAID/storcli/storcli64 /c1 /eall /sall show
+
+---------------------------------------------------------------------------------------
+EID:Slt DID State DG       Size Intf Med SED PI SeSz Model                     Sp Type
+---------------------------------------------------------------------------------------
+252:0    10 Onln   0 464.729 GB SATA SSD Y   N  512B Samsung SSD 870 EVO 500GB U  -
+252:1    11 Onln   0 110.827 GB SATA SSD N   N  512B ADATA SU650               U  -
+---------------------------------------------------------------------------------------
+```
 
 ### Lihat Virtual Disk yang ada pada raid controller
 /opt/MegaRAID/storcli/storcli64 /cX/vall show
+Contoh melihat virtual disk yang dikonfigurasi pada raid controller 1
+```
+# /opt/MegaRAID/storcli/storcli64 /c1/vall show
+
+---------------------------------------------------------------
+DG/VD TYPE  State Access Consist Cache Cac sCC       Size Name
+---------------------------------------------------------------
+0/0   RAID1 Optl  RW     Yes     RAWBD -   ON  110.827 GB
+---------------------------------------------------------------
+```
 
 ### Lihat foreign configuration pada raid controller
 /opt/MegaRAID/storcli/storcli64 /cX/fall show
