@@ -44,5 +44,17 @@ DG/VD TYPE  State Access Consist Cache Cac sCC       Size Name
 ### Lihat foreign configuration pada raid controller
 /opt/MegaRAID/storcli/storcli64 /cX/fall show
 
+Contoh melihat foreign configuration yang dikonfigurasi pada raid controller 1, pada kondisi ini tidak ada foreign configuration yang terbaca.
+```
+# /opt/MegaRAID/storcli/storcli64 /c1/fall show
+CLI Version = 007.3306.0000.0000 Feb 21, 2025
+Operating system = Linux 5.15.0-119-generic
+Controller = 1
+Status = Success
+Description = Couldn't find any foreign Configuration
+
+Total Foreign PDs = 0
+```
+
 ### Import foreign configuration apabila ada foreign configuration yang terbaca
 /opt/MegaRAID/storcli/storcli64 /cX/fall import
