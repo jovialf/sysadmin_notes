@@ -3,6 +3,7 @@
 ### Clone menggunakan RSYNC
 Pada kasus kali ini clone dari remote server ke server lokal yang sudah di installasi OS Ubuntu 24.04 dengan mengskip beberapa direktori dan file.
 Yang perlu di perhatikan adalah skip direktori /dev /proc /sys /run /etc/netplan dan skip file /etc/fstab.
+Pada contoh ini IP address remote server adalah 10.10.10.10 dan port sshnya adalah 2232.
 ```
 sudo rsync -aAXv \
 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/admin","/etc/netplan/*","/etc/hostname","/etc/hosts","/etc/fstab"} \
